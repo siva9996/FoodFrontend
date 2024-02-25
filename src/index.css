@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#carousel img {
+  max-height: 500px;
+}
+
+@media screen and (min-width:0px) and (max-width: 600px) {
+  .caption1 {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .caption1 {
+    top: 300px;
+  }
+}
