@@ -27,7 +27,7 @@ const Cart = ({ handlesubmit, post1 }) => {
                     <div className="card mb-3 mx-auto col-10" style={{ maxWidth: "540px", height: "130px" }}>
                         <div className="row">
                             <div className="col-4">
-                                <img src={`http://localhost:5000/images/${post.photo}`} className="img-fluid rounded-start" alt="..." style={{ height: "130px" }} />
+                                <img src={`https://foodbackend-dh1r.onrender.com/images/${post.photo}`} className="img-fluid rounded-start" alt="..." style={{ height: "130px" }} />
                             </div>
                             <div className="col-8 d-flex">
                                 <div className="card-body" style={{ marginLeft: "-40px" }}>
