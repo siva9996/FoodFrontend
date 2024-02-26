@@ -9,7 +9,7 @@ const Login = () => {
     const [email1, setemail1] = useState('')
     const [password1, setpassword1] = useState('')
     const [admin, setadmin] = useState(false)
-    const API_URL = 'http://localhost:5000/api/login/'
+    const API_URL = 'https://foodbackend-dh1r.onrender.com/api/login/'
     const hanldesubmit = (e) => {
         e.preventDefault()
         if (admin) {
@@ -32,7 +32,7 @@ const Login = () => {
         setadmin(!admin)
     }
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh", marginTop: "50px" }}>
             <div>
                 <Navbar />
             </div>

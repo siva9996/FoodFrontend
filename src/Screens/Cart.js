@@ -49,7 +49,7 @@ const Cart = ({ handlesubmit, post1 }) => {
         </div>
     ))
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh", marginTop: "60px" }}>
             <Navbar post1={post1} />
             <div>
                 {renderedposts}

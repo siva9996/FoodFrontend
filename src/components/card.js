@@ -5,7 +5,7 @@ import { postAdded } from '../components/Postslice'
 import { useNavigate } from 'react-router-dom'
 
 const Card = ({ items }) => {
-    const API_URL = 'http://localhost:5000/api/admin/'
+    const API_URL = 'https://foodbackend-dh1r.onrender.com/api/admin/'
     const dispatch = useDispatch()
     const [val, setval] = useState(1)
     const navigate = useNavigate()
@@ -42,7 +42,7 @@ const Card = ({ items }) => {
             <div className='row d-flex justify-content-center' style={{ marginLeft: "-50px" }}>
                 {items.map((item) => (
                     <div className="card mt-5 ms-5 col-md-4 bg-dark" style={{ "width": "18rem", "maxHeight": "450px" }}>
-                        <img src={`http://localhost:5000/images/${item.photo}`} className="card-img-top w-100 mt-2" alt="..." style={{ width: "260px", height: "200px" }} />
+                        <img src={`https://foodbackend-dh1r.onrender.com/images/${item.photo}`} className="card-img-top w-100 mt-2" alt="..." style={{ width: "260px", height: "200px" }} />
                         <div className="card-body">
 
                             <h5 className="card-title">{item.name}</h5>

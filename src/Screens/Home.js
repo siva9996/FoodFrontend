@@ -19,7 +19,7 @@ const Home = ({ post1 }) => {
         setval(value)
     }
     const [fooditem, setfooditem] = useState([])
-    const API_URL = 'http://localhost:5000/api/admin/'
+    const API_URL = 'https://foodbackend-dh1r.onrender.com/api/admin/'
     useEffect(() => {
         setloading(true)
         axios.get(API_URL).then((res) => {
@@ -49,7 +49,7 @@ const Home = ({ post1 }) => {
                         <div><Navbar
                             post1={post1}
                         /></div>
-                        <div><Carousal
+                        <div style={{ marginTop: "50px" }}><Carousal
                             handlesearch={handlesearch}
                             onchildInput={onchildInput}
                         /></div>

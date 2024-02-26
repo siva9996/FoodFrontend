@@ -6,7 +6,7 @@ const Carousal = ({ handlesearch, onchildInput }) => {
     onchildInput(search)
     return (
         <div>
-            <div className='carousel-caption caption1' style={{ zIndex: "10" }} >
+            <div className='carousel-caption caption1' style={{ zIndex: "4" }} >
                 <form className='d-flex' >
                     <input type="search" className='form-control me-2' placeholder='search' aria-label='search' onChange={(e) => setsearch(e.target.value)} />
                     <button className='btn btn-outline-success text-white bg-success' type='submit' onClick={handlesearch}>Search</button>

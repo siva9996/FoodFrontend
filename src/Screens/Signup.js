@@ -10,7 +10,7 @@ const Signup = () => {
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
     const [address, setaddress] = useState('')
-    const API_URL = 'http://localhost:5000/api/createuser/'
+    const API_URL = 'https://foodbackend-dh1r.onrender.com/api/createuser/'
     const hanldesubmit = (e) => {
         e.preventDefault()
         axios.post(API_URL, { name: name, location: address, email: email, password: password }).then((res) => {
@@ -20,11 +20,11 @@ const Signup = () => {
         })
     }
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh" }}>
-            <div>
+        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh" }} >
+            < div >
                 <Navbar />
-            </div>
-            <div>
+            </div >
+            <div style={{ marginTop: "70px" }}>
                 <form className='offset-md-4 col-md-4 offset-1 col-10' onSubmit={hanldesubmit}>
                     <div className="mb-3">
                         <label htmlFor="name" className="form-label">Name</label>
@@ -50,7 +50,7 @@ const Signup = () => {
             <div>
                 <Footer />
             </div>
-        </div>
+        </div >
     )
 }
 

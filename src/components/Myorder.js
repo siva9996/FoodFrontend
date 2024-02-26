@@ -4,7 +4,7 @@ import Footer from './Footer'
 
 const Myorder = ({ posts, amount, post1 }) => {
     return (
-        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", minHeight: "100vh", marginTop: "60px" }}>
             <div>
                 <Navbar post1={post1} />
             </div>

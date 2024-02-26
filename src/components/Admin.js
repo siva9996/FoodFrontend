@@ -7,7 +7,7 @@ const Admin = () => {
     const [fdname, setfdname] = useState('')
     const [fdphoto, setfdphoto] = useState('')
     const [fdprice, setfdprice] = useState('')
-    const API_URL = 'http://localhost:5000/api/admin/'
+    const API_URL = 'https://foodbackend-dh1r.onrender.com/api/admin/'
     const handlesubmit = async (e) => {
         e.preventDefault()
         console.log(fdname)
