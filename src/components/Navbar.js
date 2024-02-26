@@ -16,7 +16,7 @@ const Navbar = ({ post1 }) => {
     return (
         <div style={{ overflow: "hidden", position: "fixed", top: "0", zIndex: "5", width: "100%" }} className='bg-secondary'>
             <Navbar1 collapseOnSelect expand="md" className="bg-body-tertiary">
-                <Navbar1.Brand className="navbar-brand fs-3 fst-italic ms-3" style={{ color: "#08d37e", fontWeight: "700" }}><Link to='/' className='text-decoration-none'><i className='bi bi-airplane'></i>Food</Link></Navbar1.Brand>
+                <Navbar1.Brand className="navbar-brand fs-3 fst-italic ms-3" style={{ color: "#08d37e", fontWeight: "700" }}><Link to='/' className='text-decoration-none'><i className='bi bi-airplane me-2'></i>Food</Link></Navbar1.Brand>
                 <Navbar1.Toggle aria-controls="responsive-navbar-nav" className='me-3' />
                 <Navbar1.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
